@@ -64,9 +64,19 @@ h1 {
     margin: 0 auto;
 }
 
+.section-start {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
 .section-hero {
     padding: 5.4rem 0 8.8rem 0;
     background-color: #fdf2e9;
+}
+
+.section-features {
+    padding: 3rem 0;
+    text-align: center;
 }
 
 /* ---------- Nav-Bar ----------- */
@@ -140,6 +150,10 @@ header {
     width: 100%;
 }
 
+.hero-container i {
+    font-size: 1rem;
+}
+
 .costumers {
     margin-top: 5rem;
     display: flex;
@@ -169,4 +183,19 @@ header {
     border-radius: 50%;
     border: 5px solid #fdf2e9;
     margin-left: -1.2rem;
+}
+
+/* ---------- Section Start ----------- */
+
+.features-list {
+    margin: 2.5rem auto 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.features-list>img {
+    height: 2.3rem;
+    filter: brightness(0);
+    opacity: 50%;
 }
