@@ -5,6 +5,8 @@
 }
 
 body {
+    max-width: 2200px;
+    margin: 0 auto;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     color: #555;
@@ -95,6 +97,11 @@ h3 {
     padding: 5rem 0;
     width: 80%;
     margin: 0 auto;
+}
+
+.section-meals {
+    padding: 4.8rem;
+    text-align: center;
 }
 
 /* ---------- Nav-Bar ----------- */
@@ -280,4 +287,96 @@ header {
 
 .step-img img{
     height: 100%;
+}
+
+
+/* --------- Meals --------- */
+
+.meal-container {
+    width: 80%;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.meal-card {
+    position: relative;
+    top: 0;
+    background-color: #fcfcfc;
+    border-radius: 15px;
+    box-shadow: 1px -1px 8px #555;
+    overflow: hidden;
+    transition: top ease 0.5s;
+}
+
+.meal-card:hover {
+    top: -15px;
+}
+
+.meal-container>div {
+    font-size: 1.2rem;
+    flex-basis: 24%
+}
+
+.meal-img, .meal-img img { width: 100% }
+
+.meal-content {
+    padding: 1.4rem 2.4rem 2.4rem;
+    text-align: left;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 0.9rem;
+    padding: 0.2rem 1rem;
+    color: #000;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tag-vegan {
+    background-color: #94d82d;
+}
+
+.tag-Paleo {
+    background-color: #ffd43b;
+}
+
+.meal-heading {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.meal-content li {
+    margin-bottom: 1rem;
+}
+
+.icon-meal {
+    color: #FF7F3F;
+    margin-right: 0.8rem;
+}
+
+.meal-side {
+    padding: 1rem 0 3rem;
+    text-align: left;
+}
+
+.meal-side>h3 {
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: #FF7F3F
+}
+
+.meal-side .icon-meal {margin-right: 2rem}
+
+.meal-side li {
+    margin: 0 2rem 1.5rem;
+}
+
+.more-meals {
+    font-size: 1.2rem;
+    color: #FF7F3F;
+    padding: 0 0.8rem .4rem;
+    border-bottom: 1px solid #FF7F3F;
 }
