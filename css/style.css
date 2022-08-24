@@ -15,11 +15,19 @@ body {
 a { text-decoration: none }
 ul { list-style: none}
 
-h1 {
-    font-size: 3.0rem;
+h1, h2, h3 {
     margin-bottom: 2.2rem;
     color: #222;
     font-weight: 700;
+}
+
+h1 {font-size: 3rem}
+
+h2 {font-size: 2.6rem;}
+
+h3 {
+    margin-bottom: 1.8rem;
+    font-size: 2.2rem;
 }
 
 .btn:link,
@@ -66,7 +74,9 @@ h1 {
 
 .section-start {
     text-transform: uppercase;
+    margin-bottom: 0.8rem;
     font-size: 1.2rem;
+    color: #FF7F3F;
 }
 
 .section-hero {
@@ -75,8 +85,16 @@ h1 {
 }
 
 .section-features {
-    padding: 3rem 0;
+    padding: 3.5rem 0;
+    margin: 0 auto;
+    width: 80%;
     text-align: center;
+}
+
+.section-working {
+    padding: 5rem 0;
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* ---------- Nav-Bar ----------- */
@@ -185,17 +203,81 @@ header {
     margin-left: -1.2rem;
 }
 
-/* ---------- Section Start ----------- */
+/* ---------- Section Features ----------- */
+
+.section-features .section-start {color: #555;}
 
 .features-list {
-    margin: 2.5rem auto 0;
-    width: 80%;
+    margin: 2.9rem auto 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .features-list>img {
     height: 2.3rem;
     filter: brightness(0);
     opacity: 50%;
+}
+
+/* ---------- Section Working ----------- */
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5.6rem;
+    grid-row-gap: 9.6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.step-content {
+    padding: 0 3.2rem;
+}
+
+.step-number {
+    font-size: 4rem;
+    margin-bottom: .9rem;
+}
+
+.step-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+    /*padding: 0 3rem;*/
+    /*text-align: center;*/
+}
+
+.step-img::before, .step-img::after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.step-img::after {
+    width: 45%;
+    padding-bottom: 45%;
+    background-color: #fae5d3;
+    z-index: -1;
+}
+
+.step-img::before {
+    width: 60%;
+    padding-bottom: 60%;
+    background-color: #fdf2e9;
+    z-index: -2;
+}
+
+.step-content {
+    font-size: 1.2rem;
+    line-height: 1.25;
+}
+
+.step-img img{
+    height: 100%;
 }
