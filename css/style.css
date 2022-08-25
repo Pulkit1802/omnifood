@@ -100,8 +100,16 @@ h3 {
 }
 
 .section-meals {
-    padding: 4.8rem;
+    padding: 4.8rem 0 5.6rem;
     text-align: center;
+}
+
+.section-testimonials {
+    background-color: #fdf2e9;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 6rem;
+    align-items: center;
 }
 
 /* ---------- Nav-Bar ----------- */
@@ -379,4 +387,63 @@ header {
     color: #FF7F3F;
     padding: 0 0.8rem .4rem;
     border-bottom: 1px solid #FF7F3F;
+}
+
+
+/* ----------- Testimonials Section -------------- */
+
+.testimonial-content {
+    padding: 0 0 0 4rem;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+    justify-content: start;
+    margin-top: 6rem;
+}
+
+.user-image {
+    height: 4.5rem;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.user-image>img {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.user-review {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-images {
+    /*display: grid;*/
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    /*grid-gap: 1rem;*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    padding: 1.6rem;
+
+}
+
+.testimonial-image {
+    overflow: hidden;
+    background-color: #000;
+}
+
+.testimonial-image>img {
+    width: 100%;
+    transform: scale(1.25);
+    opacity: 0.8;
+    transition: opacity .8s, transform .8s;
+}
+
+.testimonial-image>img:hover {
+    transform: scale(1.05);
+    opacity: 1;
 }
