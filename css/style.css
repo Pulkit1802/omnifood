@@ -10,7 +10,7 @@ body {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     color: #555;
-    line-height: 1;
+    line-height: 1.25;
     overflow-x: hidden;
 }
 
@@ -115,6 +115,12 @@ h3 {
 .section-pricing {
     padding: 4.8rem 0;
     text-align: center;
+    background: linear-gradient(#fff 70%, rgba(253, 242, 233, 0.4));
+}
+
+.section-why-us {
+    padding: 5rem;
+    background: linear-gradient(rgba(253, 242, 233, 0.4), rgba(253, 242, 233, 0.9));
 }
 
 /* ---------- Nav-Bar ----------- */
@@ -524,4 +530,44 @@ header {
     transform: rotate(45deg);
 }
 
+/* ---------- Section Why Us ---------- */
+.why-us-cards {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
 
+.why-us {
+    flex-basis: 20%;
+}
+
+.us-icon {margin-bottom: 1.5rem}
+
+.us-icon i {
+    position: relative;
+    font-size: 2.4rem;
+    margin-left: 0.8rem;
+    color: #FF7F3F;
+}
+
+.us-icon i:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #facdad;
+    z-index: -1;
+    border-radius: 50%;
+    height: 4.2rem;
+    width: 4.4rem;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.why-us-heading {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: 1.3rem;
+}
