@@ -32,6 +32,10 @@ h3 {
     font-size: 2rem;
 }
 
+h4 {
+    font-size: 1.4rem;
+}
+
 .btn:link,
 .btn:visited {
     padding: .7rem 2.8rem;
@@ -115,12 +119,21 @@ h3 {
 .section-pricing {
     padding: 4.8rem 0;
     text-align: center;
-    background: linear-gradient(#fff 70%, rgba(253, 242, 233, 0.4));
+    background: linear-gradient(#fff 60%, rgba(253, 242, 233, 0.4));
 }
 
 .section-why-us {
     padding: 5rem;
-    background: linear-gradient(rgba(253, 242, 233, 0.4), rgba(253, 242, 233, 0.9));
+    background: linear-gradient(rgba(253, 242, 233, 0.4), rgba(253, 242, 233, 0.8), rgba(253, 242, 233, 0.2));
+}
+
+.section-contact-us {
+    padding: 5rem 0;
+    background: linear-gradient(rgba(253, 242, 233, 0.2) 10%, #fff);
+}
+
+footer {
+    padding: 5rem 0;
 }
 
 /* ---------- Nav-Bar ----------- */
@@ -570,4 +583,161 @@ header {
     font-size: 1.6rem;
     line-height: 2rem;
     margin-bottom: 1.3rem;
+}
+
+/* ----------- Section Form ---------- */
+.form-container {
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #222;
+    background: linear-gradient(to right bottom, #eb984e, #e67e22);
+}
+
+.form-data {
+    flex-basis: 70%;
+    padding: 0 4rem;
+}
+
+.form-image {
+    flex-basis: 25%;
+    overflow: hidden;
+}
+
+.form-image>img {
+    opacity: 0.6;
+    width: 100%;
+    transform: scale(1.05);
+}
+
+.form-data>p {
+    margin-bottom: 2rem;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 6rem;
+    grid-row-gap: 1rem;
+    align-items: end;
+}
+
+label, select, input {
+    display: block;
+    position: relative;
+}
+input, select {
+    outline: none;
+    width: 80%;
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 15px;
+    background-color: #fdf2e9;
+}
+
+label {
+    font-size: 1.2rem;
+    margin: 0 0 0.4rem 0.4rem;
+}
+
+.form-submission {
+    cursor: pointer;
+    color: #fff;
+    display: block;
+    width: 80%;
+    border: none;
+    background-color: #45260a;
+    transition: color 0.4s, background-color 0.4s;
+}
+
+.form-submission:hover {
+    color: #222;
+    background-color: #fff;
+}
+
+/*  --------- Footer ---------- */
+
+.footer-logo {
+    height: 1.4rem;
+    margin-bottom: 1.4rem;
+}
+
+.footer-logo img {
+    height: 100%;
+}
+
+.footer-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy-container {
+    flex: 0 0 16%;
+}
+
+.footer-card {
+    flex:0 0 16%;
+}
+
+.footer-social-links {
+    display: flex;
+    font-size: 1.3rem;
+    margin-bottom: 2.4rem;
+}
+
+.insta, .twit, .face {font-size: 1.4rem}
+
+.footer-social-links a:link,
+.footer-social-links a:visited {
+    color: #555;
+    margin-bottom: 1.4rem;
+    margin-right: 1rem;
+    transition: color 0.4s;
+}
+
+.insta:hover,
+.insta:active {
+    color:#bc2a8d;
+}
+
+.twit:hover,
+.twit:active {
+    color: #00acee;
+}
+
+.face:hover,
+.face:active {
+    color: #4267B2;
+}
+
+.footer-card h4 {
+    margin-bottom: 1.6rem;
+}
+
+.footer-card li {
+    margin-bottom: 1rem;
+}
+
+.footer-card:first-child li {
+    margin-bottom: 1.4rem;
+}
+
+.footer-card a:link,
+.footer-card a:visited {
+    color: #555;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px transparent;
+    transition: color 0.4s, border 0.4s;
+}
+
+.footer-card a:hover,
+.footer-card a:active {
+    color: #222;
+    border-bottom: 1px solid #222;
 }
